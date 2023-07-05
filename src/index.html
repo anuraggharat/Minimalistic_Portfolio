@@ -8,7 +8,7 @@
     <title>Portfolio</title>
 
     <!-- Link to the CSS file generated after build process -->
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,52 +23,52 @@
 </head>
 
 
-<body class="relative flex flex-col items-center bg-white">
+<body class="relative flex flex-col items-center bg-white scroll-smooth dark:bg-[#121212]">
 
-    <nav class="fixed backdrop-blur-md bg-white bg-opacity-60 w-full flex flex-row justify-center z-20">
+    <nav class="fixed backdrop-blur-md bg-white dark:bg-[#121212] bg-opacity-60 w-full flex flex-row justify-center z-20">
             <div class="flex flex-row justify-between items-center w-[72rem] p-4 ">
-                <div class="hidden md:flex">
+                <div class="hidden md:flex dark:text-white">
                     <p>JoneDoe.</p>
                 </div>
                 <div class="flex flex-row justify-between w-full md:w-auto gap-4 md:gap-10">
-                    <ul class="flex flex-row items-center text-sm md:text-base gap-4 md:gap-10 border border-gray-300 bg-white rounded-full px-6 md:px-10 w-auto h-12 md:h-16 ">
+                    <ul class="flex flex-row items-center text-sm md:text-base gap-4 md:gap-10 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#121212] dark:text-white rounded-full px-6 md:px-10 w-auto h-12 md:h-16 ">
                         <li>
-                            <a>Home</a>
+                            <a href="#" rel="noopener noreferrer">Home</a>
                         </li>
                         <li>
-                            <a>About</a>
+                            <a href="#about" rel="noopener noreferrer">About</a>
                         </li>
                         <li>
-                            <a>Work</a>
+                            <a href="#work" rel="noopener noreferrer">Work</a>
                         </li>
                         <li>
-                            <a>Blogs</a>
+                            <a href="#blogs" rel="noopener noreferrer">Blogs</a>
                         </li>
                         <li>
-                            <a>Contact</a>
+                            <a href="#contact" rel="noopener noreferrer">Contact</a>
                         </li>
             
                     </ul>
-                    <button class="bg-white w-12 h-12 md:w-16 md:h-16 flex flex-row justify-center items-center border-gray-300 border rounded-full">
+                    <button class="bg-white w-12 h-12 md:w-16 md:h-16 flex flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
                         <i class="ri-sun-line ri-lg md:ri-xl"></i>
                     </button>
                 </div>
             </div>
     </nav>
 
-    <main class="max-w-6xl ">
+    <main class="max-w-6xl dark:text-white">
             <!-- Home section -->
             <section class="flex flex-col w-full h-auto min-h-screen justify-center relative px-6 md:px-4">
             
                 <div class="flex flex-col-reverse md:flex-row flex-wrap gap-10 md:gap-0">
-                    <div class="w-full md:w-3/5 flex flex-col justify-center items-start">
+                    <div class="w-full md:w-3/5 flex flex-col justify-center items-start dark:text-white">
                         <h1 class="text-4xl md:text-5xl font-medium">Hey there, I'm Jon Doe!</h1>
                         <h2 class="text-lg md:text-2xl my-2 md:my-6">A Full Stack Developer and Designer based in India</h2>
                         <p class="text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut optio magnam odio aut necessitatibus nisi
                             sed
                             nulla incidunt earum adipisci!</p>
                         <button
-                            class="mt-10 flex flex-row items-center gap-2 border border-gray-400 py-4 px-8 rounded-full hover:gap-4 hover:bg-purple-600 hover:text-white transition-all ease-in-out duration-300">
+                            class="mt-10 flex flex-row items-center gap-2 border border-gray-400 dark:border-gray-600 py-4 px-8 rounded-full hover:bg-purple-600 hover:text-white transition-all ease-in-out duration-300">
                             Download CV
                             <i class="ri-arrow-right-up-line ri-xl"></i>
             
@@ -77,16 +77,17 @@
                     <div class="w-full md:w-2/5 flex flex-row justify-center items-center">
                         <img class="w-2/3 md:w-[90%] rounded-full"
                             src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHx8&w=1000&q=80" />
-                    </div>
+                    
+                        </div>
                 </div>
             
             
             </section>
             
             <!-- About Section -->
-            <section class="w-full py-20 px-6 md:px-4">
+            <section class="w-full py-20 px-6 md:px-4" id="about">
                 <h1 class="text-4xl font-semibold">About</h1>
-                <p class="mt-10">
+                <p class="mt-10 dark:text-gray-300">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur saepe fugiat nesciunt fuga.
                     Maxime est nisi nulla inventore ab beatae maiores ipsum esse! Quibusdam blanditiis earum ratione harum incidunt
                     vitae sunt cum officiis illum,
@@ -94,7 +95,7 @@
                     inventore ab beatae maiores ipsum esse! Quibusdam blanditiis earum ratione harum incidunt
                     vitae sunt cum officiis illum.
                 </p>
-                <p class="mt-10">
+                <p class="mt-10 dark:text-gray-300">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur saepe fugiat nesciunt fuga.
                     Maxime est nisi nulla inventore ab beatae maiores ipsum esse! Quibusdam blanditiis earum ratione harum incidunt
                     vitae sunt cum officiis illum,
@@ -102,33 +103,32 @@
                 </p>
                 <div class="flex flex-row justify-start gap-2 flex-wrap">
                     <ul class="text-sm flex flex-row gap-2 flex-wrap mt-10">
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">HTML</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">CSS</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">SASS</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">Bootstrap</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">Tailwind CSS</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">JavaScript</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">TypeScipt</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">React</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">Next.js</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">Angular</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">Express</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">Node</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">MongoDB</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">MySQL</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">Figma</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">Docker</li>
-                        <li class="px-5 py-2 border border-gray-200 rounded-full hover:bg-purple-600 hover:text-white  transition-all duration-300 ease-in-out">AWS</li>
-            
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out ">HTML</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">CSS</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">SASS</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Bootstrap</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Tailwind CSS</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">JavaScript</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">TypeScipt</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">React</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Next.js</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Angular</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Express</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Node</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">MongoDB</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">MySQL</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Figma</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Docker</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">AWS</li>
                     </ul>
                 </div>
             </section>
             
             <!-- Work Experience section -->
-            <section class="w-full py-20">
+            <section class="w-full py-20" >
                     <div class="mb-5 px-4">
                         <h1 class="text-4xl font-semibold mb-5">Work Experience</h1>
-                        <p class=" text-gray-600">
+                        <p class=" text-gray-600 dark:text-gray-300">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nesciunt voluptatum sequi aliquam
                             deleniti
                             expeditae aque? Blanditiis saepe vitae dicta?
@@ -139,11 +139,11 @@
                         <div class="flex flex-row justify-between">
                             <div>
                                 <h3 class="text-2xl font-medium">Google</h3>
-                                <p class="text-base font-medium text-gray-700">Senior Software Engineer</p>
+                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Senior Software Engineer</p>
                             </div>
                             <p>June 2021 - Now</p>
                         </div>
-                        <ul class="text-base text-gray-700 px-4 list-disc list-outside mt-2 font-light  max-w-4xl">
+                        <ul class="text-base text-gray-700 px-4 list-disc list-outside mt-2 font-light  dark:text-gray-300 max-w-4xl">
                             <li>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum vero ducimus quis repellendus sit
                                 itaque, cum necessitatibus nemo animi repudiandae.
@@ -155,11 +155,11 @@
                         <div class="flex flex-row justify-between">
                             <div>
                                 <h3 class="text-2xl font-medium">Amazon</h3>
-                                <p class="text-base font-medium text-gray-700">Software Engineer - II</p>
+                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Software Engineer - II</p>
                             </div>
                             <p>July 2019 - May 2021</p>
                         </div>
-                        <ul class="text-base text-gray-700 list-disc list-outside px-4 mt-2 font-light max-w-4xl">
+                        <ul class="text-base text-gray-700 list-disc list-outside px-4 mt-2 font-light max-w-4xl dark:text-gray-300">
                             <li>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum vero ducimus quis repellendus sit
                                 itaque,
@@ -172,11 +172,11 @@
                         <div class="flex flex-row justify-between">
                             <div>
                                 <h3 class="text-2xl font-medium">Meta</h3>
-                                <p class="text-base font-medium text-gray-700">Software Engineer - I</p>
+                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Software Engineer - I</p>
                             </div>
                             <p>August 2018 - July 2019</p>
                         </div>
-                        <ul class="text-base text-gray-700 list-disc list-inside mt-2 font-light  max-w-4xl">
+                        <ul class="text-base text-gray-700 list-disc list-inside mt-2 font-light dark:text-gray-300 max-w-4xl">
                             <li>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum vero ducimus quis repellendus sit
                                 itaque,
@@ -188,20 +188,20 @@
             </section>
             
             <!-- Works section -->
-            <section class="w-full py-20">
+            <section class="w-full py-20" id="work">
                 <div class="mb-5 md:px-4">
                     <h1 class="text-4xl font-semibold mb-5">Works</h1>
-                    <p class=" text-gray-600">
+                    <p class=" text-gray-600 dark:text-gray-300">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nesciunt voluptatum sequi aliquam deleniti
                         expeditae aque? Blanditiis saepe vitae dicta?
                     </p>
                 </div>
                 <div class="flex flex-col md:flex-row flex-wrap">
-                    <div class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Amazon Clone</h1>
-                        <p class="text-sm mt-2">A Full Stack Amazon clone application</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Amazon clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full hover:text-purple-600">
                             <i class="ri-links-fill"></i>
@@ -209,11 +209,11 @@
                         </a>
                     </div>
             
-                    <div class="flex flex-col items-start w-full md:w-1/3  p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex flex-col items-start w-full md:w-1/3  p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Facebook Clone</h1>
-                        <p class="text-sm mt-2">A Full Stack Facebook clone application</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Facebook clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full hover:text-purple-600">
                             <i class="ri-links-fill"></i>
@@ -222,11 +222,11 @@
                     </div>
             
                     <div
-                        class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100  dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Spotify Clone</h1>
-                        <p class="text-sm mt-2">A Full Stack Spotify clone application</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Spotify clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full hover:text-purple-600">
                             <i class="ri-links-fill"></i>
@@ -235,11 +235,11 @@
                     </div>
             
                     <div
-                        class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100  dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Netflix Clone</h1>
-                        <p class="text-sm mt-2">A Full Stack Netflix clone application</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Netflix clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full  hover:text-purple-600">
                             <i class="ri-links-fill"></i>
@@ -248,11 +248,11 @@
                     </div>
             
                     <div
-                        class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Discord Clone</h1>
-                        <p class="text-sm mt-2">A Full Stack Discord clone application</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Discord clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full  hover:text-purple-600">
                             <i class="ri-links-fill"></i>
@@ -261,11 +261,11 @@
                     </div>
             
                     <div
-                        class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        class="flex flex-col items-start w-full md:w-1/3 p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg dark:hover:bg-[#222] transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">AirBnb Clone</h1>
-                        <p class="text-sm mt-2">A Full Stack AirBnb clone application</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">A Full Stack AirBnb clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full hover:text-purple-600">
                             <i class="ri-links-fill"></i>
@@ -280,7 +280,7 @@
             <section class="w-full py-20">
                 <div class="mb-5 px-6 md:px-4">
                     <h1 class="text-4xl font-semibold mb-5">What I offer</h1>
-                    <p class=" text-gray-600">
+                    <p class=" text-gray-600 dark:text-gray-300">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nesciunt voluptatum sequi aliquam deleniti
                         expeditae aque? Blanditiis saepe vitae dicta?
                     </p>
@@ -289,17 +289,17 @@
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4">
                         <i class="ri-paint-brush-line ri-3x text-purple-600"></i>
                         <h1 class="text-xl font-medium mt-4">UI/UX Design</h1>
-                        <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
                     </div>
                     <div class="flex flex-col items-start  w-full md:w-1/3 p-6 md:p-4">
                         <i class="ri-quill-pen-line ri-3x text-purple-600"></i>
                         <h1 class="text-xl font-medium mt-4">Technical Writing</h1>
-                        <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
                     </div>
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4">
                         <i class="ri-terminal-box-line ri-3x text-purple-600"></i>
                         <h1 class="text-xl font-medium mt-4">Website Developer</h1>
-                        <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
                     </div>
                 </div>
             </section>
@@ -308,17 +308,17 @@
             <section class="w-full py-20" id="blogs">
                 <div class="p-6 md:p-4 mb-5">
                     <h1 class="text-4xl font-semibold mb-5">Blogs</h1>
-                    <p class=" text-gray-600">
+                    <p class=" text-gray-600 dark:text-gray-300">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nesciunt voluptatum sequi aliquam deleniti
                         expeditae aque? Blanditiis saepe vitae dicta?
                     </p>
                 </div>
                 <div class="flex flex-row flex-wrap">
-                    <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                    <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded-lg" />
                         <h1 class="text-xl font-medium mt-4">How to be more Productive at Work?</h1>
-                        <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 px-4 py-2 border border-gray-200 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
                             Read more
@@ -328,11 +328,11 @@
                     </div>
             
                     <div
-                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">How better designs help to solve problems</h1>
-                        <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 px-4 py-2 border border-gray-200 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
                             Read more
@@ -343,11 +343,11 @@
                     </div>
             
                     <div
-                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">How to build a career in Tech industry?</h1>
-                        <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 px-4 py-2 border border-gray-200 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
                             Read more
@@ -356,11 +356,11 @@
                         </a>
                     </div>
                     <div
-                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg" />
                         <h1 class="text-xl font-medium mt-4">How to be more Productive at Work?</h1>
-                        <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 px-4 py-2 border border-gray-200 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
                             Read more
@@ -370,11 +370,11 @@
                     </div>
             
                     <div
-                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">How better designs help to solve problems</h1>
-                        <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
                     <a href="#" target="_blank" rel="noopener noreferrer"
                         class="mt-4 px-4 py-2 border border-gray-200 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
                         Read more
@@ -384,11 +384,11 @@
                     </div>
             
                     <div
-                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
                             src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">How to build a career in Tech industry?</h1>
-                        <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
+                        <p class="text-sm mt-2 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, animi.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
                             class="mt-4 px-4 py-2 border border-gray-200 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
                             Read more
@@ -401,10 +401,10 @@
             
             
             <!-- Contact section -->
-            <section class="w-full py-20">
+            <section class="w-full py-20" id="contact">
                 <div class="p-6 md:p-4">
                     <h1 class="text-4xl font-semibold mb-5">Contact</h1>
-                    <p class=" text-gray-600">
+                    <p class=" text-gray-600 dark:text-gray-300">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nesciunt voluptatum sequi aliquam deleniti
                         expeditae aque? Blanditiis saepe vitae dicta?
                     </p>
@@ -427,17 +427,18 @@
                     <div class="flex flex-col justify-start items-start gap-4 w-full md:w-1/2 p-6 md:p-10">
                         <h2 class="font-medium text-xl">Send me a Message</h2>
                         <input type="email" name="name" id="email" 
-                        class="cursor-pointer block w-full border border-gray-300 rounded-xl bg-transparent py-4 px-6 text-gray-900 
-                                        placeholder:text-gray-400 hover:border-gray-700 focus:ring-0 sm:text-sm sm:leading-6"
+                        class="cursor-pointer block w-full border border-gray-300 dark:border-gray-600 rounded-xl bg-transparent py-4 px-6 text-gray-900 
+                                        placeholder:text-gray-400 hover:border-gray-700 hover:dark:border-gray-300 focus:ring-0 sm:text-sm sm:leading-6"
                             placeholder="Jon Doe" />
-                        <input type="email" name="email" id="email" class="cursor-pointer block w-full border border-gray-300 rounded-xl bg-transparent py-4 px-6 text-gray-900 
-                                        placeholder:text-gray-400 hover:border-gray-700 focus:ring-0 sm:text-sm sm:leading-6"
+                        <input type="email" name="email" id="email"      class="cursor-pointer block w-full border border-gray-300 dark:border-gray-600 rounded-xl bg-transparent py-4 px-6 text-gray-900 
+                                        placeholder:text-gray-400 hover:border-gray-700 hover:dark:border-gray-300 focus:ring-0 sm:text-sm sm:leading-6"
+                   
                             placeholder="jondoe@email.com" />
             
                         <textarea rows="3" name="message" id="message"
-                            class="cursor-pointer block w-full border border-gray-300 rounded-xl bg-transparent py-4 px-6 
-                                    text-gray-900 placeholder:text-gray-400 hover:border-gray-700 focus:ring-0 sm:text-sm sm:leading-6"
-                            placeholder="jondoe@email.com"></textarea>
+                                 class="cursor-pointer block w-full border border-gray-300 dark:border-gray-600 rounded-xl bg-transparent py-4 px-6 text-gray-900 
+                                        placeholder:text-gray-400 hover:border-gray-700 hover:dark:border-gray-300 focus:ring-0 sm:text-sm sm:leading-6"
+                   placeholder="Your Message"></textarea>
             
                         <button class="flex flex-row items-center gap-4 px-4 py-2 bg-purple-600 text-white rounded-lg text-lg">
                             Send
@@ -454,21 +455,20 @@
                     &#169; 2023 anurag gharat
                 </p>
                 <div class="flex flex-row gap-2 text-xl">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] bg-gray-200 rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
+                    <a href="http://" target="_blank" rel="noopener noreferrer" 
+                    class="flex flex-row justify-center items-center w-12 h-12 border-[1px] border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-[#222] rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
                         transition-all ease-in-out duration-300 ">
                         <i class="ri-facebook-line"></i>
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] bg-gray-200 rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
-                        transition-all ease-in-out duration-300 ">
-                        <i class="ri-twitter-line"></i>
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-[#222] rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
+                                        transition-all ease-in-out duration-300 ">
+                                              <i class="ri-twitter-line"></i>
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] bg-gray-200 rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
-                        transition-all ease-in-out duration-300 ">
-                        <i class="ri-instagram-line"></i>
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-[#222] rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
+                                        transition-all ease-in-out duration-300 ">     <i class="ri-instagram-line"></i>
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] bg-gray-200 rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
-                        transition-all ease-in-out duration-300 ">
-                        <i class="ri-youtube-line"></i>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-[#222] rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
+                                            transition-all ease-in-out duration-300 ">    <i class="ri-youtube-line"></i>
                     </a>
                 </div>
             </footer>
