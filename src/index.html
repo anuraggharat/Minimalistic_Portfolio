@@ -14,58 +14,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 
-    <script>
-
-                
-
-
-        //if theme preference is not present in local storage, set it to light
-        if (!('theme' in localStorage)) {
-            localStorage.setItem('theme','light')
-        }
-
-        //if user has a preference for dark, change it to dark
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                        localStorage.setItem('theme', 'dark')
-
-        }
-
-        //finally set the theme based on local storage value
-        if (localStorage.theme === 'dark') {
-            document.documentElement.classList.add('dark')
-            var themeIcon = document.getElementById('theme-icon')
-            themeIcon.classList.add('ri-sun-foggy-line')
  
-        } else {
-            document.documentElement.classList.remove('dark')
-            var themeIcon = document.getElementById('theme-icon')
-            themeIcon.classList.add('ri-moon-cloudy-line')
-        }
-        
-        function toggleTheme(){
-
-            if(localStorage.theme === 'dark'){
-            var themeIcon = document.getElementById('theme-icon')
-
-                document.documentElement.classList.remove('dark')
-                localStorage.theme='light'
-                themeIcon.classList.remove('ri-moon-cloudy-line')
-                themeIcon.classList.add('ri-sun-foggy-line')
-
-            }
-            else if(localStorage.theme === 'light'){
-            var themeIcon = document.getElementById('theme-icon')
-
-                document.documentElement.classList.add('dark')
-                localStorage.theme = 'dark'
-                themeIcon.classList.add('ri-moon-cloudy-line')
-                themeIcon.classList.remove('ri-sun-foggy-line')
-            }
-        }
-
-
-
-    </script>
 
 
 </head>
@@ -97,8 +46,11 @@
                         </li>
             
                     </ul>
-                    <button id="theme-toggler" onclick="toggleTheme()" class="bg-white w-12 h-12 md:w-16 md:h-16 flex flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
-                        <i class="ri-moon-cloudy-line ri-xl" id="sun-icon"></i>
+     
+                    <button onclick="toggleTheme()"
+                        class=" flex bg-white w-12 h-12 md:w-16 md:h-16 flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
+                        <i  id="theme-toggler-sun" class="ri-sun-fill text-yellow-400 ri-xl" id="sun-icon"></i>
+                        <i  id="theme-toggler-moon" class="ri-moon-clear-line text-blue-800 ri-xl" id="sun-icon"></i>
 
                     </button>
                 </div>
@@ -527,3 +479,51 @@
 </body>
 
 </html>
+
+<script>
+
+    //initialize variables for icons
+    const moonIcon = document.querySelector('#theme-toggler-moon')
+    const sunIcon = document.querySelector('#theme-toggler-sun')
+
+    //function to toggle the state of icons
+    function toggleIcons() {
+        moonIcon.classList.toggle('hidden')
+        sunIcon.classList.toggle('hidden')
+    }
+
+    //set intial theme based on local storage and user preference
+    function setInitialTheme() {
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+            moonIcon.classList.add('hidden')
+            localStorage.setItem('theme', 'dark')
+        }
+        else {
+            document.documentElement.classList.remove('dark')
+            sunIcon.classList.add('hidden')
+            localStorage.setItem('theme', 'light')
+        }
+    }
+
+
+    //toggle theme manually
+    function toggleTheme() {
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.remove('dark')
+            localStorage.theme = 'light'
+            toggleIcons()
+        }
+        else {
+            document.documentElement.classList.add('dark')
+            localStorage.theme = 'dark'
+            toggleIcons()
+        }
+    }
+
+    //calling function to set initial theme
+    setInitialTheme()
+
+
+
+</script>
