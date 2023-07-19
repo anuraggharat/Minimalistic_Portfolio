@@ -11,53 +11,86 @@
     <link href="./output.css" rel="stylesheet">
 
     
-
+    <!-- CDN for Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 
  
-
+    <!-- Add your Meta tags here -->
 
 </head>
 
 
 <body class="relative flex flex-col items-center bg-white dark:bg-[#121212]">
 
+    <!-- navbar component -->
     <nav class="fixed backdrop-blur-md bg-white dark:bg-[#121212] bg-opacity-60 w-full flex flex-row justify-center z-20">
             <div class="flex flex-row justify-between items-center w-[72rem] p-4 ">
-                <div class="hidden md:flex dark:text-white">
+                <div class="flex dark:text-white">
                     <p>JoneDoe.</p>
                 </div>
-                <div class="flex flex-row justify-between w-full md:w-auto gap-4 md:gap-10">
-                    <ul class="flex flex-row items-center text-sm md:text-base gap-4 md:gap-10 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#121212] dark:text-white rounded-full px-6 md:px-10 w-auto h-12 md:h-16 ">
+                <div class="flex flex-row justify-end md:justify-between w-full md:w-auto gap-4 md:gap-10">
+                    <ul class="hidden md:flex flex-row items-center text-sm md:text-base gap-4 md:gap-10 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#121212] dark:text-white rounded-full px-6 md:px-10 w-auto h-12 md:h-16 ">
                         <li>
-                            <a href="#" rel="noopener noreferrer">Home</a>
+                            <a href="#" rel="noopener noreferrer" class="hover:text-purple-600">Home</a>
                         </li>
                         <li>
-                            <a href="#about" rel="noopener noreferrer">About</a>
+                            <a href="#about" rel="noopener noreferrer" class="hover:text-purple-600">About</a>
                         </li>
                         <li>
-                            <a href="#work" rel="noopener noreferrer">Work</a>
+                            <a href="#work" rel="noopener noreferrer" class="hover:text-purple-600">Work</a>
                         </li>
                         <li>
-                            <a href="#blogs" rel="noopener noreferrer">Blogs</a>
+                            <a href="#blogs" rel="noopener noreferrer" class="hover:text-purple-600">Blogs</a>
                         </li>
                         <li>
-                            <a href="#contact" rel="noopener noreferrer">Contact</a>
+                            <a href="#contact" rel="noopener noreferrer" class="hover:text-purple-600">Contact</a>
                         </li>
             
-                    </ul>
-     
+                    </ul>  
                     <button onclick="toggleTheme()"
                         class=" flex bg-white w-12 h-12 md:w-16 md:h-16 flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
                         <i  id="theme-toggler-sun" class="ri-sun-fill text-yellow-400 ri-xl" id="sun-icon"></i>
                         <i  id="theme-toggler-moon" class="ri-moon-clear-line text-blue-800 ri-xl" id="sun-icon"></i>
-
                     </button>
+                    <div class="relative">
+
+                    <button 
+                    onclick="togglemenu()"
+                    
+                        class="flex md:hidden bg-white w-12 h-12 md:w-16 md:h-16 flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
+                        <i id="menu-toggler" class="ri-menu-line ri-xl"></i>
+                    </button>
+                    <ul
+                    id="menu-list"
+                        class="fixed flex -top-80 right-0 flex-col items-center text-sm md:text-base gap-4 
+                        md:gap-10 dark:border-gray-600 dark:text-white 
+                        rounded-sm p-6 md:px-10 w-full h-auto bg-white dark:bg-[#121212]
+                        transition-all duration-500 ease-out">
+                        <li>
+                            <a href="#" rel="noopener noreferrer" class="hover:text-purple-600">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" rel="noopener noreferrer" class="hover:text-purple-600">About</a>
+                        </li>
+                        <li>
+                            <a href="#work" rel="noopener noreferrer" class="hover:text-purple-600">Work</a>
+                        </li>
+                        <li>
+                            <a href="#blogs" rel="noopener noreferrer" class="hover:text-purple-600">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#contact" rel="noopener noreferrer" class="hover:text-purple-600">Contact</a>
+                        </li>
+                    </ul>
                 </div>
+
+            </div>
+                
             </div>
     </nav>
 
     <main class="max-w-6xl dark:text-white">
+
             <!-- Home section -->
             <section class="flex flex-col w-full h-auto min-h-screen justify-center relative px-6 md:px-4">
             
@@ -200,7 +233,7 @@
                 <div class="flex flex-col md:flex-row flex-wrap">
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="../src/assets/amazon.jpg"  class="rounded-lg"  />
+                            src="./src/assets/amazon.jpg"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Amazon Clone</h1>
                         <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Amazon clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -212,7 +245,7 @@
             
                     <div class="flex flex-col items-start w-full md:w-1/3  p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="../src/assets/facebook.jpg"  class="rounded-lg"  />
+                            src="./src/assets/facebook.jpg"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Facebook Clone</h1>
                         <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Facebook clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -225,7 +258,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100  dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="../src/assets/spotify.png"  class="rounded-lg"  />
+                            src="./src/assets/spotify.png"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Spotify Clone</h1>
                         <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Spotify clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -238,7 +271,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100  dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="../src/assets/netflix.jpg"  class="rounded-lg"  />
+                            src="./src/assets/netflix.jpg"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Netflix Clone</h1>
                         <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Netflix clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -251,7 +284,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="../src/assets/discord.png"  class="rounded-lg"  />
+                            src="./src/assets/discord.png"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">Discord Clone</h1>
                         <p class="text-sm mt-2 dark:text-gray-300">A Full Stack Discord clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -264,7 +297,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg dark:hover:bg-[#222] transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="../src/assets/airbnb.jpg"  class="rounded-lg"  />
+                            src="./src/assets/airbnb.jpg"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">AirBnb Clone</h1>
                         <p class="text-sm mt-2 dark:text-gray-300">A Full Stack AirBnb clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -524,6 +557,17 @@
     //calling function to set initial theme
     setInitialTheme()
 
+    //toggle menu on small screens
+
+    function togglemenu(){
+        const menuButton = document.getElementById('menu-toggler')
+        const menuList = document.getElementById('menu-list')
+        menuList.classList.toggle('-top-80')
+        menuList.classList.toggle('top-20')
+        menuButton.classList.toggle('ri-menu-line')
+        menuButton.classList.toggle('ri-close-line')
+
+    }
 
 
 </script>
