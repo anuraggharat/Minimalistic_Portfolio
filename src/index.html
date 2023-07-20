@@ -513,6 +513,7 @@
 
 </html>
 
+<!-- JavaScript for Menu togglers and Dark Mode functionality -->
 <script>
 
     //initialize variables for icons
@@ -558,12 +559,16 @@
     setInitialTheme()
 
     //toggle menu on small screens
-
     function togglemenu(){
+        //create variables for button and list
         const menuButton = document.getElementById('menu-toggler')
         const menuList = document.getElementById('menu-list')
+        
+        //toggle class to bring menu inside viewport
         menuList.classList.toggle('-top-80')
         menuList.classList.toggle('top-20')
+
+        //toggle class to change menu icon to cross icon
         menuButton.classList.toggle('ri-menu-line')
         menuButton.classList.toggle('ri-close-line')
 
