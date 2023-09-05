@@ -23,9 +23,10 @@
     <nav class="fixed backdrop-blur-md bg-white dark:bg-[#121212] bg-opacity-60 w-full flex flex-row justify-center z-20">
             <div class="flex flex-row justify-between items-center w-[72rem] p-4 ">
                 <div class="flex dark:text-white">
-                    <p>JoneDoe.</p>
+                    <p>AG.</p>
                 </div>
                 <div class="flex flex-row justify-end md:justify-between w-full md:w-auto gap-4 md:gap-10">
+                    <!--Links component - Visible on large screens and not on small screens-->
                     <ul class="hidden md:flex flex-row items-center text-sm md:text-base gap-4 md:gap-10 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#121212] dark:text-white rounded-full px-6 md:px-10 w-auto h-12 md:h-16 ">
                         <li>
                             <a href="#" rel="noopener noreferrer" class="hover:text-purple-600">Home</a>
@@ -56,6 +57,7 @@
                         class="flex md:hidden bg-white w-12 h-12 md:w-16 md:h-16 flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
                         <i id="menu-toggler" class="ri-menu-line ri-xl"></i>
                     </button>
+                    <!-- Drop Down componet for Links (Not visible on Large screens) -->
                     <ul
                     id="menu-list"
                         class="fixed flex -top-80 right-0 flex-col items-center text-sm md:text-base gap-4 
@@ -92,19 +94,19 @@
             
                 <div class="flex flex-col-reverse md:flex-row flex-wrap gap-10 md:gap-0">
                     <div class="w-full md:w-3/5 flex flex-col justify-center items-start dark:text-white">
-                        <h1 class="text-4xl md:text-5xl font-bold">Hey there, I'm Jon Doe!</h1>
+                        <h1 class="text-4xl md:text-5xl font-semibold">Hey there, I'm Anurag!</h1>
                         <h2 class="text-lg md:text-2xl my-2 md:my-6">A Full Stack Developer and Designer based in India</h2>
                         <p class="text-sm md:text-base dark:text-neutral-300 text-neutral-600">Full-stack developer with a passion for turning code into seamless user experiences!</p>
                         <button
                             class="mt-10 flex flex-row items-center gap-2 border border-gray-400 dark:border-gray-600 py-4 px-8 hover:border-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition-all ease-in-out duration-300">
                             Download CV
                             <i class="ri-arrow-right-up-line ri-xl"></i>
-            
+    
                         </button>
                     </div>
                     <div class="w-full md:w-2/5 flex flex-row justify-center items-center">
-                        <img class="w-2/3 md:w-[90%] rounded-full"
-                            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHx8&w=1000&q=80" />
+                        <img class="w-2/4 md:w-3/4 rounded-full"
+                            src="https://www.anuraggharat.tech/images/anurag.jpg" />
                     
                         </div>
                 </div>
@@ -116,7 +118,8 @@
             <section class="w-full py-20 px-6 md:px-4" id="about">
                 <h1 class="text-4xl font-semibold">About</h1>
                 <p class="mt-10 dark:text-neutral-300 text-neutral-600">
-                    I am a passionate full-stack software developer with a deep-rooted love for crafting digital solutions that empower and inspire. My journey into the world of software development began with a solid foundation in computer science, which I acquired during my years of dedicated study at Central University, where I earned my Bachleor's in Computer Science degree.
+                    I am a passionate full-stack software developer with a deep-rooted love for crafting digital solutions that empower and inspire. 
+                    My journey into the world of software development began with a solid foundation in computer science, which I acquired during my years of dedicated study at Ramrao Adik Institute of Technology, where I earned my Bachleor's in Computer Science degree.
                 </p>
                 <p class="mt-4 dark:text-neutral-300 text-neutral-600">
                     My educational journey provided me with a strong theoretical understanding, but it's my insatiable curiosity and relentless drive that have fueled my practical expertise. I thrive in the dynamic and ever-evolving tech landscape, constantly updating my skills to stay at the forefront of innovation.
@@ -152,54 +155,37 @@
             <section class="w-full py-20" >
                     <div class="mb-5 px-6 md:px-4">
                         <h1 class="text-4xl font-semibold mb-5">Work Experience</h1>
-                        <p class=" dark:text-neutral-300 text-neutral-600">
-                            As a Developer, I have a total work experience of 10 years where I have worked on designing and developing multiple products.  
-                        </p>
-                    </div>
-            
-                    <div class="flex flex-col p-6 md:p-4">
-                        <div class="flex flex-row justify-between">
-                            <div>
-                                <h3 class="text-2xl font-medium">Google</h3>
-                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Senior Software Engineer</p>
-                            </div>
-                            <p>June 2021 - Now</p>
-                        </div>
-                        <ul class="text-basepx-4 list-disc list-outside mt-2 font-light  dark:text-neutral-300 text-neutral-600 max-w-4xl">
-                            <li>
-                                Collaborated with cross-functional teams to develop and maintain web applications, ensuring seamless front-end and back-end integration..
-                            </li>
-                            <li>Employed version control systems, primarily Git, to manage codebase and facilitate collaboration among team members.</li>
-                        </ul>
                     </div>
                     <div class="flex flex-col p-6 md:p-4">
                         <div class="flex flex-row justify-between">
                             <div>
-                                <h3 class="text-2xl font-medium">Amazon</h3>
-                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Software Engineer - II</p>
+                                <h3 class="text-2xl font-medium">LTI-Mindtree</h3>
+                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Software Engineer</p>
                             </div>
-                            <p>July 2019 - May 2021</p>
+                            <p>July 2021 - Now</p>
                         </div>
                         <ul class="text-base list-disc list-outside px-4 mt-2 font-light max-w-4xl dark:text-neutral-300 text-neutral-600">
                             <li>
-                                Led the development of a dynamic e-commerce platform, incorporating responsive design principles to enhance the user experience.
+                                Working as a Back-end engineer in the Banking and Finance Sector.
                             </li>
-                            <li>Conducted unit testing and participated in the development of automated testing scripts to ensure application reliability.</li>
+                            <li>Maintaing and adding new features to an Application Portal for an Internation Bank. Tech stack includes: Java, Spring, MySQL.</li>
                         </ul>
                     </div>
                     <div class="flex flex-col p-6 md:p-4">
                         <div class="flex flex-row justify-between">
                             <div>
-                                <h3 class="text-2xl font-medium">LambdaTest</h3>
-                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Software Engineer - I</p>
+                                <h3 class="text-2xl font-medium">Edunomics</h3>
+                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Web Developer Intern</p>
                             </div>
-                            <p>August 2018 - July 2019</p>
+                            <p>May 2020 - July 2020</p>
                         </div>
                         <ul class="text-base list-disc list-inside mt-2 font-light dark:text-neutral-300 text-neutral-600 max-w-4xl">
+                            
                             <li>
-                                Utilized technologies such as HTML5, CSS3, JavaScript, React.js, and Node.js to build robust and interactive web applications.
+                                Worked with the team for designing and developing products like Wenester.in and CxDeployer.
+                                    
                             </li>
-                            <li>Optimized website performance, reducing page load times by 25% through efficient coding and caching strategies.</li>
+                            <li>Single handedly built and deployed websites like Edunomics.in and Tech.Edunomics.in Tech stack includes: React, Bootstrap, Node, Express,MongoDB.</li>
                         </ul>
                     </div>
             </section>
@@ -208,9 +194,6 @@
             <section class="w-full py-20" id="work">
                 <div class="mb-5 px-6 md:px-4">
                     <h1 class="text-4xl font-semibold mb-5">Works</h1>
-                    <p class=" dark:text-neutral-300 text-neutral-600">
-                        Along with my full time job I also develop apps and websites. Here are some of my recent projects.
-                    </p>
                 </div>
                 <div class="flex flex-col md:flex-row flex-wrap">
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
@@ -296,24 +279,22 @@
             <section class="w-full py-20">
                 <div class="mb-5 px-6 md:px-4">
                     <h1 class="text-4xl font-semibold mb-5">What I offer</h1>
-                    <p class=" dark:text-neutral-300 text-neutral-600">
-                        Along with being a Full Stack Developer, I am also available for Freelance project based work. Here is a list of services that I offer
-                    </p>
+                   
                 </div>
                 <div class="flex flex-col md:flex-row justify-between flex-wrap">
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4">
                         <i class="ri-paint-brush-line ri-3x text-purple-600"></i>
                         <h1 class="text-xl font-medium mt-4">UI/UX Design</h1>
-                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Complete User Interface design of a website or App.</p>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Complete User Interface design of a website or an App.</p>
                     </div>
                     <div class="flex flex-col items-start  w-full md:w-1/3 p-6 md:p-4">
                         <i class="ri-quill-pen-line ri-3x text-purple-600"></i>
                         <h1 class="text-xl font-medium mt-4">Technical Writing</h1>
-                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Writing blogs, guide, short content realted to tech.</p>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Writing blogs, guide or any short content realted to Tech.</p>
                     </div>
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4">
                         <i class="ri-terminal-box-line ri-3x text-purple-600"></i>
-                        <h1 class="text-xl font-medium mt-4">Website Developer</h1>
+                        <h1 class="text-xl font-medium mt-4">Website Development</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Developing a website from scratch with all the modern tools.</p>
                     </div>
                 </div>
@@ -323,9 +304,6 @@
             <section class="w-full py-20" id="blogs">
                 <div class="p-6 md:p-4 mb-5">
                     <h1 class="text-4xl font-semibold mb-5">Blogs</h1>
-                    <p class=" dark:text-neutral-300 text-neutral-600">
-                        Here are some blogs that I have written so far
-                    </p>
                 </div>
                 <div class="flex flex-row flex-wrap">
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
@@ -429,11 +407,11 @@
                     <div class="w-full md:w-1/2 flex flex-col flex-wrap justify-center gap-4">
                         <div class="w-full md:w-2/3 rounded-xl p-6 flex flex-col bg- gap-4">
                             <i class="ri-mail-line ri-xl text-purple-600"></i>
-                            <p>personalemail@email.com</p>
+                            <p>anuraggharat55@email.com</p>
                         </div>
                         <div class="w-full md:w-2/3 rounded-xl p-6 flex flex-col bg- gap-4">
                             <i class="ri-phone-line ri-xl text-purple-600"></i>
-                            <p>+91-9090123213</p>
+                            <p>+91-1010101010</p>
                         </div>
                         <div class="w-full md:w-2/3 rounded-xl p-6 flex flex-col bg- gap-4">
                             <i class="ri-map-pin-line ri-xl text-purple-600"></i>
@@ -445,11 +423,11 @@
                         <input type="email" name="name" id="email" 
                         class="cursor-pointer block w-full border border-gray-300 dark:border-gray-600 rounded-xl bg-transparent py-4 px-6 text-gray-900 
                                         placeholder:text-gray-400 hover:border-gray-700 hover:dark:border-gray-300 focus:ring-0 sm:text-sm sm:leading-6"
-                            placeholder="Jon Doe" />
+                            placeholder="Your Name" />
                         <input type="email" name="email" id="email"      class="cursor-pointer block w-full border border-gray-300 dark:border-gray-600 rounded-xl bg-transparent py-4 px-6 text-gray-900 
                                         placeholder:text-gray-400 hover:border-gray-700 hover:dark:border-gray-300 focus:ring-0 sm:text-sm sm:leading-6"
                    
-                            placeholder="jondoe@email.com" />
+                            placeholder="Your Email" />
             
                         <textarea rows="3" name="message" id="message"
                                  class="cursor-pointer block w-full border border-gray-300 dark:border-gray-600 rounded-xl bg-transparent py-4 px-6 text-gray-900 
