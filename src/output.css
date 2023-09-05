@@ -1058,10 +1058,6 @@ html {
     width: 33.333333%;
   }
 
-  .md\:w-1\/4{
-    width: 25%;
-  }
-
   .md\:w-16{
     width: 4rem;
   }
@@ -1074,20 +1070,16 @@ html {
     width: 40%;
   }
 
+  .md\:w-3\/4{
+    width: 75%;
+  }
+
   .md\:w-3\/5{
     width: 60%;
   }
 
   .md\:w-auto{
     width: auto;
-  }
-
-  .md\:w-2\/4{
-    width: 50%;
-  }
-
-  .md\:w-3\/4{
-    width: 75%;
   }
 
   .md\:flex-row{
