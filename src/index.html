@@ -8,7 +8,7 @@
     <title>Tailwind CSS Portfolio</title>
 
     <!-- Link to the CSS file generated after build process -->
-    <link href="./output.css" rel="stylesheet">
+    <link  href="./output.css" rel="stylesheet">
     
     <!-- CDN for Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
@@ -45,7 +45,7 @@
                         </li>
             
                     </ul>  
-                    <button onclick="toggleTheme()"
+                    <button onclick="toggleTheme()" aria-label="theme menu"
                         class=" flex bg-white w-12 h-12 md:w-16 md:h-16 flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
                         <i  id="theme-toggler-sun" class="ri-sun-fill text-yellow-400 ri-xl" id="sun-icon"></i>
                         <i  id="theme-toggler-moon" class="ri-moon-clear-line text-blue-800 ri-xl" id="sun-icon"></i>
@@ -54,6 +54,7 @@
 
                     <button 
                         onclick="togglemenu()"
+                        aria-label="Menu"
                         class="flex md:hidden bg-white w-12 h-12 md:w-16 md:h-16 flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
                         <i id="menu-toggler" class="ri-menu-line ri-xl"></i>
                     </button>
@@ -97,7 +98,7 @@
                         <h1 class="text-4xl md:text-5xl font-semibold">Hey there, I'm Anurag!</h1>
                         <h2 class="text-lg md:text-2xl my-2 md:my-6">A Full Stack Developer and Designer based in India</h2>
                         <p class="text-sm md:text-base dark:text-neutral-300 text-neutral-600">Full-stack developer with a passion for turning code into seamless user experiences!</p>
-                        <button
+                        <button aria-label="download"
                             class="mt-10 flex flex-row items-center gap-2 border border-gray-400 dark:border-gray-600 py-4 px-8 hover:border-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition-all ease-in-out duration-300">
                             Download CV
                             <i class="ri-arrow-right-up-line ri-xl"></i>
@@ -106,7 +107,7 @@
                     </div>
                     <div class="w-full md:w-2/5 flex flex-row justify-center items-center">
                         <img class="w-2/4 md:w-3/4 rounded-full"
-                            src="./anurag.jpg" />
+                            src="./anurag.jpg" alt="anurag gharat" />
                     
                         </div>
                 </div>
@@ -159,7 +160,7 @@
                     <div class="flex flex-col p-6 md:p-4">
                         <div class="flex flex-row justify-between">
                             <div>
-                                <h3 class="text-2xl font-medium">LTI-Mindtree</h3>
+                                <h2 class="text-2xl font-medium">LTI-Mindtree</h2>
                                 <p class="text-base font-medium text-gray-700 dark:text-gray-200">Software Engineer</p>
                             </div>
                             <p>July 2021 - Now</p>
@@ -174,7 +175,7 @@
                     <div class="flex flex-col p-6 md:p-4">
                         <div class="flex flex-row justify-between">
                             <div>
-                                <h3 class="text-2xl font-medium">Edunomics</h3>
+                                <h2 class="text-2xl font-medium">Edunomics</h2>
                                 <p class="text-base font-medium text-gray-700 dark:text-gray-200">Web Developer Intern</p>
                             </div>
                             <p>May 2020 - July 2020</p>
@@ -198,7 +199,7 @@
                 <div class="flex flex-col md:flex-row flex-wrap">
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="./amazon.jpg"  class="rounded-lg"  loading="lazy"  />
+                            src="./amazon.jpg"  class="rounded-lg"  loading="lazy"  alt="Tailwind CSS Portfolio"  />
                         <h1 class="text-xl font-medium mt-4">Amazon Clone</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Amazon clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -210,7 +211,7 @@
             
                     <div class="flex flex-col items-start w-full md:w-1/3  p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="./facebook.jpg"  class="rounded-lg" loading="lazy"   />
+                            src="./facebook.jpg"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"    />
                         <h1 class="text-xl font-medium mt-4">Facebook Clone</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Facebook clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -223,7 +224,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100  dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="./spotify.png"  class="rounded-lg" loading="lazy"   />
+                            src="./spotify.png"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"   />
                         <h1 class="text-xl font-medium mt-4">Spotify Clone</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Spotify clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -236,7 +237,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100  dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="./netflix.jpg"  class="rounded-lg" loading="lazy"   />
+                            src="./netflix.jpg"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"    />
                         <h1 class="text-xl font-medium mt-4">Netflix Clone</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Netflix clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -249,7 +250,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="./discord.png"  class="rounded-lg" loading="lazy"   />
+                            src="./discord.png"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"   />
                         <h1 class="text-xl font-medium mt-4">Discord Clone</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Discord clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -262,7 +263,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg dark:hover:bg-[#222] transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="./airbnb.jpg"  class="rounded-lg" loading="lazy"   />
+                            src="./airbnb.jpg"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"    />
                         <h1 class="text-xl font-medium mt-4">AirBnb Clone</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack AirBnb clone application</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -308,7 +309,7 @@
                 <div class="flex flex-row flex-wrap">
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  class="rounded-lg" />
+                            src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  alt="Tailwind CSS Portfolio"   class="rounded-lg" />
                         <h1 class="text-xl font-medium mt-4">How to be more Productive at Work?</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">10 Tips on how to work done and be productive.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -322,7 +323,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"   class="rounded-lg"  />
+                            src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  alt="Tailwind CSS Portfolio"   class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">How better designs help to solve problems</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Know about User Experience and how it helps to solve problems.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -337,7 +338,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  class="rounded-lg"  />
+                            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  alt="Tailwind CSS Portfolio"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">How to build a career in Tech industry?</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Looking for a career in Tech? Here are some tips to get you started.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -350,7 +351,7 @@
                     
                     <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  class="rounded-lg" />
+                            src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  alt="Tailwind CSS Portfolio"   class="rounded-lg" />
                         <h1 class="text-xl font-medium mt-4">How to be more Productive at Work?</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">10 Tips on how to work done and be productive.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -364,7 +365,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"   class="rounded-lg"  />
+                            src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"   alt="Tailwind CSS Portfolio"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">How better designs help to solve problems</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Know about User Experience and how it helps to solve problems.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -379,7 +380,7 @@
                     <div
                         class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
                         <img
-                            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  class="rounded-lg"  />
+                            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"   alt="Tailwind CSS Portfolio"  class="rounded-lg"  />
                         <h1 class="text-xl font-medium mt-4">How to build a career in Tech industry?</h1>
                         <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Looking for a career in Tech? Here are some tips to get you started.</p>
                         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -434,7 +435,7 @@
                                         placeholder:text-gray-400 hover:border-gray-700 hover:dark:border-gray-300 focus:ring-0 sm:text-sm sm:leading-6"
                    placeholder="Your Message"></textarea>
             
-                        <button class="flex flex-row items-center gap-4 px-4 py-2 bg-purple-600 text-white rounded-lg text-lg">
+                        <button class="flex flex-row items-center gap-4 px-4 py-2 bg-purple-600 text-white rounded-lg text-lg" aria-label="Send">
                             Send
                             <i class="ri-send-plane-2-line"></i>
                         </button>
@@ -473,8 +474,8 @@
 
 </html>
 
-<!-- JavaScript for Menu togglers and Dark Mode functionality -->
-<script>
+<!-- JavaScript for Menu togglers and Dark Mode functionality --> 
+<script defer>
 
     //initialize variables for icons
     const moonIcon = document.querySelector('#theme-toggler-moon')
